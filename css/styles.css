@@ -1,0 +1,403 @@
+/* *****************************************************
+   ESTILOS GENERALES
+   ***************************************************** */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    color: #333333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #111;
+    text-transform: uppercase;
+}
+
+.section-subtitle {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #666;
+}
+
+/* *****************************************************
+   HEADER / NAV
+   ***************************************************** */
+.header {
+    background: #ffffff;
+    color: #111111;
+    padding: 15px 0;
+    border-bottom: 3px solid #ee122a;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 22px;
+    font-weight: 800;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.nav a:hover {
+    color: #ee122a;
+}
+
+/* *****************************************************
+   HERO (Video)
+   ***************************************************** */
+.hero {
+    position: relative;
+    height: 70vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+}
+
+.hero-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    object-fit: cover;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 2;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 3;
+    max-width: 800px;
+    padding: 20px;
+}
+
+.hero-content h2 {
+    font-size: 42px;
+    margin-bottom: 15px;
+    font-weight: 800;
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.btn, .btn-buy, .contacto-form button {
+    display: inline-block;
+    background: #ee122a;
+    color: #fff;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn:hover, .btn-buy:hover, .contacto-form button:hover {
+    background: #b80c1e;
+}
+
+/* *****************************************************
+   INFO e HISTORIA (Flexbox)
+   ***************************************************** */
+.servicios {
+    padding: 60px 0;
+    background: #ffffff;
+}
+
+.servicios-container {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.servicio-box {
+    flex: 1;
+    background: #f8f9fa;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+    border-top: 4px solid #ee122a;
+}
+
+.servicio-box h3 {
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+/* *****************************************************
+   PAGINA TOURS: PRODUCTOS (Flexbox)
+   ***************************************************** */
+.tour-main {
+    padding: 60px 0;
+}
+
+.products-flex {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: stretch;
+    margin-top: 30px;
+}
+
+.product-card {
+    flex: 1;
+    max-width: 360px;
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.product-card.featured {
+    border: 2px solid #ee122a;
+    transform: scale(1.03);
+}
+
+.product-tag {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #ee122a;
+    color: #fff;
+    padding: 4px 10px;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 3px;
+}
+
+.product-img-container {
+    height: 200px;
+    background: #ccc;
+}
+
+.product-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.product-info {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.product-info h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.product-info p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+.price {
+    font-size: 22px;
+    font-weight: 700;
+    color: #111;
+    margin-bottom: 15px;
+}
+
+/* *****************************************************
+   RESEÑAS (Grid 3 columnas)
+   ***************************************************** */
+.resenias-section {
+    padding: 60px 0;
+    background: #ffffff;
+}
+
+.resenias-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.resenia-card {
+    background: #f8f9fa;
+    padding: 25px;
+    border-radius: 8px;
+    border: 1px solid #eee;
+}
+
+.comentario {
+    font-style: italic;
+    font-size: 14px;
+    margin-bottom: 15px;
+    color: #444;
+}
+
+.usuario {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.estrellas {
+    color: #ffc107;
+}
+
+/* *****************************************************
+   CONTACTO Y FORMULARIO
+   ***************************************************** */
+.contacto {
+    padding: 60px 0;
+    background: #f8f9fa;
+}
+
+.contacto-container {
+    display: flex;
+    gap: 40px;
+    margin-top: 10px;
+}
+
+.contacto-info, .contacto-form {
+    flex: 1;
+}
+
+.contacto-info h3, .contacto-form h3 {
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.contacto-info p {
+    margin-bottom: 5px;
+    font-size: 15px;
+}
+
+.contacto-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contacto-form input, .contacto-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 15px;
+}
+
+/* *****************************************************
+   FOOTER (Grid 4 columnas)
+   ***************************************************** */
+.footer {
+    background-color: #111111;
+    color: #eeeeee;
+    padding: 50px 20px 20px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.footer-box h3 {
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.footer-box p, .footer-box ul li {
+    font-size: 14px;
+    color: #cccccc;
+    line-height: 1.6;
+}
+
+.footer-box ul {
+    list-style: none;
+}
+
+.footer-box ul li {
+    margin-bottom: 8px;
+}
+
+.footer-box a {
+    color: #cccccc;
+    text-decoration: none;
+}
+
+.footer-box a:hover {
+    color: #ee122a;
+}
+
+.social-links a {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #333;
+    font-size: 13px;
+    color: #888;
+}

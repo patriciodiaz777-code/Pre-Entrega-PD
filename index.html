@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour River Plate - Museo y Estadio Monumental</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">
+                <span>🔴⚪🔴</span> 
+                Tour Monumental
+            </h1>            
+            <nav class="nav">
+                <ul>
+                    <li><a href="#hero">Inicio</a></li>
+                    <li><a href="tour.html">Tipos de Tour</a></li> <li><a href="#historia">El Museo</a></li>
+                    <li><a href="#resenias-section">Reseñas</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="hero" id="hero">
+            <video autoplay muted loop playsinline class="hero-video">
+                <source src="video/Monumental.mp4" type="video/mp4">
+                Tu navegador no soporta video HTML5.
+            </video>
+
+            <div class="hero-content">
+                <h2>Viví la Experiencia Monumental</h2>
+                <p>Conocé la historia, las Copas Libertadores y el estadio más grande de Sudamérica.</p>
+                <a href="tour.html" class="btn">Ver Entradas</a>
+            </div>
+        </section>
+
+        <section class="servicios" id="historia">
+            <div class="container">
+                <h2 class="section-title">El Templo del Fútbol</h2>
+                <div class="servicios-container">
+                    <div class="servicio-box">
+                        <h3>El Museo River</h3>
+                        <p>Un recorrido tecnológico y emotivo por los más de 120 años de gloria, sus máximos ídolos y las camisetas más emblemáticas.</p>
+                    </div>
+                    <div class="servicio-box">
+                        <h3>Estadio Monumental</h3>
+                        <p>Accedé a las tribunas del renovado estadio, contemplá el imponente campo de juego y sentí la vibración de un escenario único en el mundo.</p>
+                    </div>
+                    <div class="servicio-box">
+                        <h3>Guías Oficiales</h3>
+                        <p>Recorridos acompañados por expertos que te contarán los mitos, las anécdotas y los detalles arquitectónicos de nuestra casa.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="resenias-section" id="resenias-section">
+            <div class="container">
+                <h2 class="section-title">Testimonios de Visitantes</h2>
+                <div class="resenias-container">
+                    <div class="resenia-card">
+                        <p class="comentario">"Una experiencia inolvidable. El museo es espectacular y pisar la tribuna del Monumental te pone la piel de gallina. Totalmente recomendado."</p>
+                        <h4 class="usuario">- Roman Riquelme (La Boca)</h4>
+                        <span class="estrellas">★★★★★</span>
+                    </div>
+                    <div class="resenia-card">
+                        <p class="comentario">"Fui con mis hijos y nos encantó la organización. Los guías saben muchísimo y responden todas las preguntas con excelente predisposición."</p>
+                        <h4 class="usuario">- Nicolás Fernández (Buenos Aires)</h4>
+                        <span class="estrellas">★★★★★</span>
+                    </div>
+                    <div class="resenia-card">
+                        <p class="comentario">"Impresionante cómo quedó el estadio después de las últimas reformas. Estar ahí abajo es impactante. Un templo del fútbol mundial."</p>
+                        <h4 class="usuario">- Érica Sosa (Buenos Aires)</h4>
+                        <span class="estrellas">★★★★★</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contacto" id="contacto">
+            <div class="container">
+                <h2 class="section-title">Reservas y Consultas</h2>
+                
+                <div class="contacto-container">
+
+                    
+                    <div class="contacto-info">
+                        <h3>Ubicación y Horarios</h3>
+                        <p>📍 Av. Figueroa Alcorta 7597, Núñez, CABA.</p>
+                        <p>📅 Martes a Domingos de 10:00 a 19:00 hs.</p>
+                        <p>⚠️ Los días de partido el Tour se suspende.</p>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1395.0950709394479!2d-58.44953249953242!3d-34.54536310600667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb43ae6018ddf%3A0x3d7f60a75bfa308a!2sEstadio%20Monumental!5e0!3m2!1ses-419!2sar!4v1779422524367!5m2!1ses-419!2sar" width="450" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <div class="contacto-form">
+                   
+                        <h3>Envianos tu Consulta</h3>
+                        <form action="https://formspree.io/f/mrergjrz" method="POST">
+                            <input type="text" name="nombre" placeholder="Nombre Completo" required>
+                            <input type="email" name="email" placeholder="Correo Electrónico" required>
+                            <textarea name="mensaje" placeholder="¿En qué fecha te gustaría realizar el Tour y para cuántas personas?" rows="5" required></textarea>
+                            <button type="submit">Enviar Solicitud</button>
+                        </form>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            
+            <div class="footer-box">
+                <h3>Tour Monumental</h3>
+                <p>Sitio oficial para la reserva y difusión del Museo River y la visita al Estadio de fútbol más imponente del continente.</p>
+            </div>
+
+            <div class="footer-box">
+                <h3>Enlaces Rápidos</h3>
+                <ul>
+                    <li><a href="#hero">Inicio</a></li>
+                    <li><a href="tour.html">Tipos de Tour</a></li>
+                    <li><a href="#historia">El Museo</a></li>
+                    <li><a href="#resenias-section">Reseñas</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-box">
+                <h3>Atención al Visitante</h3>
+                <p>📞 +54 11 4789-1234</p>
+                <p>✉️ museo@cariverplate.com.ar</p>
+            </div>
+
+            <div class="footer-box">
+                <h3>Seguinos</h3>
+                <div class="social-links">
+                    <a href="http://facebook.com.ar">Facebook</a>
+                    <a href="https://www.instagram.com/">Instagram</a>
+                    <a href="https://www.youtube.com/">YouTube</a>
+                    <a href="https://x.com/">X</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Tour River Plate | Proyecto Frontend | Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+</body>
+</html>
